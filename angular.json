@@ -17,19 +17,64 @@
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
-              "zone.js"
+              "zone.js",
+              "@angular/localize/init"
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "src/assets",
+                "output": "/assets"
               }
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/simplebar/dist/simplebar.css",
+              "node_modules/@iconscout/unicons/css/line.css",
+              "node_modules/swiper/swiper-bundle.min.css",
+              {
+                "input": "src/assets/css/theme-rtl.min.css",
+                "inject": true,
+                "bundleName": "theme-rtl"
+              },
+              {
+                "input": "src/assets/css/theme.min.css",
+                "inject": true,
+                "bundleName": "theme"
+              },
+              {
+                "input": "src/assets/css/user-rtl.min.css",
+                "inject": true,
+                "bundleName": "user-rtl"
+              },
+              {
+                "input": "src/assets/css/user.min.css",
+                "inject": true,
+                "bundleName": "user"
+              },
               "src/styles.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "src/vendors/simplebar/simplebar.min.js",
+              "src/assets/js/config.js",
+              "src/vendors/popper/popper.min.js",
+              "src/vendors/bootstrap/bootstrap.min.js",
+              "src/vendors/anchorjs/anchor.min.js",
+              "src/vendors/is/is.min.js",
+              "src/vendors/fontawesome/all.min.js",
+              "src/vendors/lodash/lodash.min.js",
+              "src/vendors/list.js/list.min.js",
+              "src/vendors/feather-icons/feather.min.js",
+              "src/vendors/dayjs/dayjs.min.js",
+              "src/assets/js/phoenix.js",
+              "src/vendors/isotope-layout/isotope.pkgd.min.js",
+              "src/vendors/imagesloaded/imagesloaded.pkgd.min.js",
+              "src/vendors/isotope-packery/packery-mode.pkgd.min.js",
+              "src/vendors/bigpicture/BigPicture.js",
+              "src/vendors/typed.js/typed.umd.js",
+              "src/vendors/swiper/swiper-bundle.min.js"
+            ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
@@ -41,13 +86,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                  "maximumWarning": "5mb",
+                  "maximumError": "10mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kB",
-                  "maximumError": "4kB"
+                  "maximumWarning": "8kb",
+                  "maximumError": "12kb"
                 }
               ],
               "outputHashing": "all"
@@ -80,7 +125,8 @@
           "options": {
             "polyfills": [
               "zone.js",
-              "zone.js/testing"
+              "zone.js/testing",
+              "@angular/localize/init"
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [

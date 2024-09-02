@@ -1,0 +1,84 @@
+.overlap{
+    margin-left: -0.5em;
+}
+.plane_addv{
+    min-width: 20em;
+    max-height: 17em !important;
+    min-height: 17em !important;
+}
+.align-items-end {
+    align-items: flex-end !important;
+}
+.justify-content-between {
+    justify-content: space-between !important;
+}
+.d-flex {
+    display: flex !important;
+}
+.detail.ellipsis-container .ellipsis {
+    margin: 0 3px 3px 0px;
+    font-size: 10px;
+    padding: 1px 3px;
+    border-radius: 4px;
+    display: inline-block;
+    color: #45596c;
+    border: 1px dashed #ccd5de;
+}
+.label {
+    padding: 4px 15px;
+    font-weight: 500;
+    border-radius: 4px;
+    font-size: 75%;
+}
+.square--40 {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.detail.ellipsis-container {
+    color: #455873;
+    padding-top: 2px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+}
+.p, p {
+    line-height: 1.8;
+
+}
+.coupon-code{
+.coupon{
+    font-size: clamp(4px, 4vw, 16px) !important;
+}
+@media (min-width: 1199px) {
+    .coupon {
+      font-size: clamp(2px, 2vw, 9px) !important;
+    }
+}
+}
+.ellipsis-item__normal.separate {
+    display: inline-block;width: 1px;height: 10px;margin: 0 5px;background-color: #ced2d9;
+}
+.text-decoration-none:hover {
+    text-decoration: none !important;text-decoration: none !important;
+}
+
+
+@media screen and (min-width: 600px) {
+    .center{
+        margin-left: 6%;
+    }
+    }
+
+.heightg{
+    min-height: 10em !important;
+}
+.heightg img{
+    object-fit: cover; width: 100%; min-height: 10em !important;
+}
+.nav-dropdown, .nav-menu, ul {
+    list-style: none;
+}
