@@ -9,6 +9,7 @@ import { SignUpComponent } from '../views/authentication/sign-up/sign-up.compone
 import { TwoFAComponent } from '../views/authentication/two-fa/two-fa.component';
 import { BookingComponent } from '../views/customer/booking/booking.component';
 import { CheckoutComponent } from '../views/customer/checkout/checkout.component';
+import { FlightOptionsComponent } from '../views/customer/flight-options/flight-options.component';
 import { CarDetailsComponent } from '../views/customer/car-details/car-details.component';
 import { FlightDetailsComponent } from '../views/customer/flight-details/flight-details.component';
 import { EventDetailsComponent } from '../views/customer/event-details/event-details.component';
@@ -19,6 +20,8 @@ import { TripDetailsComponent } from '../views/customer/trip-details/trip-detail
 import { TicketSelectionComponent } from '../views/customer/ticket-selection/ticket-selection.component';
 import { PaymentComponent } from '../views/customer/payment/payment.component';
 import { ProfileComponent } from '../views/user/profile/profile.component';
+import { FlightPaymentComponent } from '../views/customer/flight-payment/flight-payment.component';
+import { SearchRoomComponent } from '../views/search-room/search-room.component';
 
 export const routes: Routes = [
     // auth routes //
@@ -36,16 +39,19 @@ export const routes: Routes = [
   { path: 'cardetails', component: CarDetailsComponent },
   { path: 'hotelcheckouts', component: CheckoutComponent },
   { path: 'eventdetails', component: EventDetailsComponent },
+  { path: 'flightOptions', component: FlightOptionsComponent },
   { path: 'flightdetails', component: FlightDetailsComponent },
+  { path: 'flightpayment', component: FlightPaymentComponent },
   { path: 'customerpage', component: HomepageComponent },
   { path: 'hotelcompare', component: HotelCompareComponent },
   { path: 'hoteldetails', component: HotelDetailsComponent },
+  { path: 'searchroom', component: SearchRoomComponent },
   { path: 'hoteldetails', component: HotelDetailsComponent },
   { path: 'hotelpayment', component: PaymentComponent },
   { path: 'eventtickets', component: TicketSelectionComponent },
   { path: 'tripdetails', component: TripDetailsComponent },
 
-  // customer routes//
+  // user specific routes//
   { path: 'profile', component: ProfileComponent },
 
 

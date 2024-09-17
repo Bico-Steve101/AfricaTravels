@@ -1,0 +1,14 @@
+@media (min-width: 1200px) {
+    .phoenix-offcanvas-filter-xl {
+        width: 100% !important;
+        position: sticky !important;
+        top: 1rem !important;
+        bottom: 1rem !important;
+        padding: 0 0 0 .5rem !important;
+        -webkit-transform: none !important;
+        -ms-transform: none !important;
+        transform: none !important;
+        height: 100vh;
+        z-index: 10;
+    }
+}
