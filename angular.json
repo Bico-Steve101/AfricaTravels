@@ -38,9 +38,12 @@
               "src/vendors/nouislider/nouislider.min.css",
               "src/vendors/flatpickr/flatpickr.min.css",
               "src/vendors/choices/choices.min.css",
-              "src/vendors/dropzone/dropzone.css"
+              "src/vendors/dropzone/dropzone.css",
+              "src/vendors/tinymce/skins/ui/oxide/skin.min.css"
             ],
+            
             "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
               "src/vendors/simplebar/simplebar.min.js",
               "src/assets/js/config.js",
               "src/vendors/popper/popper.min.js",
@@ -60,7 +63,10 @@
               "src/vendors/typed.js/typed.umd.js",
               "src/vendors/swiper/swiper-bundle.min.js",
               "src/vendors/nouislider/nouislider.min.js",
-              "src/vendors/dropzone/dropzone-min.js"
+              "src/vendors/dropzone/dropzone-min.js",
+              "src/vendors/countup/countUp.umd.js",
+              "src/vendors/smtpjs.com/v3/smtp.js"
+
             ],
             "server": "src/main.server.ts",
             "prerender": true,

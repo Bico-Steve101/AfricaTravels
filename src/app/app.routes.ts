@@ -22,6 +22,10 @@ import { PaymentComponent } from '../views/customer/payment/payment.component';
 import { ProfileComponent } from '../views/user/profile/profile.component';
 import { FlightPaymentComponent } from '../views/customer/flight-payment/flight-payment.component';
 import { SearchRoomComponent } from '../views/search-room/search-room.component';
+import { ServicesComponent } from '../views/services/services.component';
+import { HotelOnboardingComponent } from '../views/onboarding/hotel-onboarding/hotel-onboarding.component';
+import { EventOnboardingComponent } from '../views/onboarding/event-onboarding/event-onboarding.component';
+import { ProductOnboardingComponent } from '../views/onboarding/product-onboarding/product-onboarding.component';
 
 export const routes: Routes = [
     // auth routes //
@@ -50,6 +54,10 @@ export const routes: Routes = [
   { path: 'hotelpayment', component: PaymentComponent },
   { path: 'eventtickets', component: TicketSelectionComponent },
   { path: 'tripdetails', component: TripDetailsComponent },
+  { path: 'our-services', component: ServicesComponent },
+  { path: 'hotel-onboarding', component: HotelOnboardingComponent },
+  { path: 'event-onboarding', component: EventOnboardingComponent },
+  { path: 'product-onboarding', component: ProductOnboardingComponent },
 
   // user specific routes//
   { path: 'profile', component: ProfileComponent },

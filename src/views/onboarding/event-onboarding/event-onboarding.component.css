@@ -1,0 +1,10 @@
+@media (min-width: 1200px) {
+    .content {
+        padding-left: 5rem !important;
+        padding-bottom: 4rem;
+    }
+}
+.form-floating svg, .btn-close, .fa-location-crosshairs, .verify-email, .accordion-button::after {
+    position: absolute;
+    left: 90% !important; 
+  }

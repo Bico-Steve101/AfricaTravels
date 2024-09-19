@@ -37,6 +37,16 @@
           }
         }
       }
-    }
+    },
+    {
+      "label": "ng-build",
+      "type": "shell",
+      "command": "./ng build"
+  },
+  {
+      "label": "ng-watch",
+      "type": "shell",
+      "command": "./ng build --watch"
+  }
   ]
 }
